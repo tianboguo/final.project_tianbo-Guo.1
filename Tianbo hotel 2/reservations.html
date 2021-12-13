@@ -4,146 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/507734e86f637cc0a24b45d07742267f/Message/MessageTemp/2094b2be7cc01448c0efa394db849ea1/File/Tianbo%20hotel/css/main.css">
     <title>Reservations</title>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="div1200 paddingtb2 d-flex d-flex-ai-c d-flex-jc-sp">
-                <a href="welcome.html"><img src="images/logo.png" class="logo" alt=""></a>
-                <ul class="menu d-flex d-flex-ai-c">
-                    <li class="marginlr2 padding1 main-bg-color"><a href="aboutUs.html" class="white">About Us</a></li>
-                    <p class="phone-number">555-555-5555</p>
-                </ul>
-            </div>
-        </header>
-        <div class="order div1200 paddingtb2">
-            <h1>Reservation information</h1>
-            <form class="padding1" onsubmit="event.preventDefault(); validateForm();">
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label for="firstName">First Name</label>
-                    <input type="text" placeholder="Enter first name" id="firstName">
-                </div>
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" placeholder="Enter last name" id="lastName">
-                </div>
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label for="checkInDate">Check in date</label>
-                    <input type="date" placeholder="chose check in date" id="checkInDate">
-                </div>
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label for="checkOutDate">Check out date</label>
-                    <input type="date" placeholder="chose check out date" id="checkOutDate">
-                </div>
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label for="numberPeople">Number people</label>
-                    <input type="number" placeholder="Enter number people" id="numberPeople">
-                </div>
-                <div class="item padding1">
-                    <div class="d-flex d-flex-ai-c">
-                        <label for="smoke">Smoke</label>
-                        <select name="smoke" id="smoke">
-                            <option value="false">false</option>
-                            <option value="true">true</option>
-                        </select>
-                    </div>
-                    <p>Guests may smoke in all of the top floor rooms but none of the others. </p>
-                </div>
-                <div class="item padding1">
-                    <div class="d-flex d-flex-ai-c">
-                        <label for="bedType">Bed type</label>
-                        <select name="bedType" id="bedType">
-                            <option value="single king-sized bed">single king-sized bed</option>
-                            <option value="double bed">double bed</option>
-                            <option value="king bed">king bed</option>
-                            <option value="queen bed">queen bed</option>
-                        </select>
-                    </div>
-                    <p>single king-sized bed and double bed fit 2 people, king bed and queen bed fit 4 people</p>
-                </div>
-                <div class="item padding1">
-                    <div class="d-flex d-flex-ai-c">
-                        <label for="roomType">Room type</label>
-                        <select name="roomType" id="roomType">
-                            <option value="guest room">guest room</option>
-                            <option value="suite room">suite room</option>
-                        </select>
-                    </div>
-                    <p>guest room(single king-sized bed,double bed);suite room(king bed,queen bed)</p>
-                </div>
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label>Address1</label>
-                    <select name="city1" id="city1" class="select-sm">
-                        <option value="America">America</option>
-                    </select>
-                    <select name="state1" id="state1" class="select-sm marginlr1">
-                        <option value="California">California</option>
-                        <option value="Florida">Florida</option>
-                        <option value="Pennsylvania">Pennsylvania</option>
-                        <option value="New York">New York</option>
-                        <option value="Boston">Boston</option>
-                        <option value="other state">other state</option>
-                    </select>
-                </div>
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label for="zipCode1">Zip Code1</label>
-                    <input type="number" placeholder="Enter zip code1" id="zipCode1">
-                </div>
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label>Address2(optional)</label>
-                    <select name="city2" id="city2" class="select-sm">
-                        <option value="none">none</option>
-                        <option value="America">America</option>
-                    </select>
-                    <select name="state2" id="state2" class="select-sm marginlr1">
-                        <option value="none">none</option>
-                        <option value="California">California</option>
-                        <option value="Florida">Florida</option>
-                        <option value="Pennsylvania">Pennsylvania</option>
-                        <option value="Virginia">Virginia</option>
-                    </select>
-                </div>
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label for="zipCode1">Zip Code2(optional)</label>
-                    <input type="number" placeholder="Enter zip code2" id="zipCode2">
-                </div>
-                <div class="item d-flex d-flex-ai-c padding1">
-                    <label for="cardNumber">card number</label>
-                    <input type="text" placeholder="Enter card number" id="cardNumber">
-                </div>
-
-                <div class="item padding1">
-                    <div class=" d-flex d-flex-ai-c">
-                        <label for="breakfast">Breakfast</label>
-                        <select name="breakfast" id="breakfast">
-                            <option value="false">false</option>
-                            <option value="true">true</option>
-                        </select>
-                    </div>
-                    <p>The cost of breakfast is $20 per person, except if a loyalty number is provided in which case it
-                        is free.</p>
-                </div>
-                <div class="item item-btn d-flex d-flex-ai-c d-flex-jc-c padding1">
-                    <input type="submit" value="send">
-                    <input type="reset" value="reset" id="reset" class="marginlr1">
-                </div>
-            </form>
-            <div class="introduce-show d-flex d-flex-al-c d-flex-jc-sp">
-                <img src="images/1.jpeg" alt="">
-                <img src="images/2.png" alt="">
-                <img src="images/3.jpeg" alt="">
-            </div>
+<div class="container">
+    <header>
+        <div class="div1200 paddingtb2 d-flex d-flex-ai-c d-flex-jc-sp">
+            <a href="../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/507734e86f637cc0a24b45d07742267f/Message/MessageTemp/2094b2be7cc01448c0efa394db849ea1/File/Tianbo%20hotel/welcome.html"><img src="../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/507734e86f637cc0a24b45d07742267f/Message/MessageTemp/2094b2be7cc01448c0efa394db849ea1/File/Tianbo%20hotel/images/logo.png" class="logo" alt=""></a>
+            <ul class="menu d-flex d-flex-ai-c">
+                <li class="marginlr2 padding1 main-bg-color"><a href="../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/507734e86f637cc0a24b45d07742267f/Message/MessageTemp/2094b2be7cc01448c0efa394db849ea1/File/Tianbo%20hotel/aboutUs.html" class="white">About Us</a></li>
+                <p class="phone-number">555-555-5555</p>
+            </ul>
         </div>
-        <footer class="paddingtb1 d-flex d-flex-ai-c d-flex-fd-c">
-            <p>@copyright Tianbo hotel</p>
-            <a href="https://ditu.google.com">address: xxxxx</a>
-        </footer>
-    </div>
+    </header>
+    <div class="order div1200 paddingtb2">
+        <h1>Reservation information</h1>
+        <form class="padding1" onsubmit="event.preventDefault(); validateForm();">
+            <div class="item d-flex d-flex-ai-c padding1">
+                <label for="firstName"><b>*</b> First Name</label>
+                <input type="text" placeholder="Enter first name" id="firstName">
+            </div>
+            <div class="item d-flex d-flex-ai-c padding1">
+                <label for="lastName"><b>*</b> Last Name</label>
+                <input type="text" placeholder="Enter last name" id="lastName">
+            </div>
+            <div class="item padding1">
+                <div class="d-flex d-flex-ai-c">
+                    <label for="smoke"><b>*</b> Smoke</label>
+                    <select name="smoke" id="smoke">
+                        <option value="false">false</option>
+                        <option value="true">true</option>
+                    </select>
+                </div>
+                <p>Guests may smoke in all of the top floor rooms but none of the others. </p>
+            </div>
+            <div class="item d-flex d-flex-ai-c padding1">
+                <label for="numberPeople"><b>*</b> Number people</label>
+                <input type="number" placeholder="Enter number people" id="numberPeople">
+            </div>
+            <div class="item padding1">
+                <div class="d-flex d-flex-ai-c">
+                    <label for="roomType"><b>*</b> Room</label>
+                    <select name="roomType" id="roomType"></select>
+                </div>
+            </div>
+            <div class="item d-flex d-flex-ai-c padding1">
+                <label for="checkInDate"><b>*</b> Check in date</label>
+                <input type="date" placeholder="chose check in date" id="checkInDate">
+            </div>
+            <div class="item d-flex d-flex-ai-c padding1">
+                <label for="checkOutDate"><b>*</b> Check out date</label>
+                <input type="date" placeholder="chose check out date" id="checkOutDate">
+            </div>
+            <div class="item d-flex d-flex-ai-c padding1">
+                <label><b>*</b> Address</label>
+                <select name="city" id="city" class="select-sm">
+                    <option value="America">America</option>
+                </select>
+                <select name="state" id="state" class="select-sm marginlr1">
+                    <option value="California">California</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Virginia">Virginia</option>
+                </select>
+            </div>
+            <div class="item d-flex d-flex-ai-c padding1">
+                <label for="zipCode1"><b>*</b> Zip Code</label>
+                <input type="number" placeholder="Enter zip code" id="zipCode">
+            </div>
+            <div class="item d-flex d-flex-ai-c padding1">
+                <label for="cardNumber">card number</label>
+                <input type="text" placeholder="Enter card number" id="cardNumber">
+            </div>
 
-    <script src="js/reservations.js"></script>
+            <div class="item padding1">
+                <div class=" d-flex d-flex-ai-c">
+                    <label for="breakfast">Breakfast</label>
+                    <select name="breakfast" id="breakfast">
+                        <option value="false">false</option>
+                        <option value="true">true</option>
+                    </select>
+                </div>
+                <p>The cost of breakfast is $20 per person, except if a loyalty number is provided in which case it
+                    is free.</p>
+            </div>
+            <div class="item item-btn d-flex d-flex-ai-c d-flex-jc-c padding1">
+                <input type="submit" value="send">
+                <input type="reset" value="reset" id="reset" class="marginlr1">
+            </div>
+        </form>
+        <div class="introduce-show d-flex d-flex-al-c d-flex-jc-sp">
+            <img src="../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/507734e86f637cc0a24b45d07742267f/Message/MessageTemp/2094b2be7cc01448c0efa394db849ea1/File/Tianbo%20hotel/images/1.jpeg" alt="">
+            <img src="../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/507734e86f637cc0a24b45d07742267f/Message/MessageTemp/2094b2be7cc01448c0efa394db849ea1/File/Tianbo%20hotel/images/2.png" alt="">
+            <img src="../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/507734e86f637cc0a24b45d07742267f/Message/MessageTemp/2094b2be7cc01448c0efa394db849ea1/File/Tianbo%20hotel/images/3.jpeg" alt="">
+        </div>
+    </div>
+    <footer class="paddingtb1 d-flex d-flex-ai-c d-flex-fd-c">
+        <p>@copyright Tianbo hotel</p>
+        <a href="https://ditu.google.com">address: xxxxx</a>
+    </footer>
+</div>
+
+<script src="js/reservationsData.js"></script>
+<script src="../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/507734e86f637cc0a24b45d07742267f/Message/MessageTemp/2094b2be7cc01448c0efa394db849ea1/File/Tianbo%20hotel/js/reservations.js"></script>
+<!-- <script src="js/checkAvailability.js"></script> -->
 </body>
 
 </html>
